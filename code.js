@@ -1,7 +1,7 @@
 function getStats(txt) {
 	
 	function CompareFrequency(V1, V2) {
-		if(V1[1] < V2[1]) return 1;
+		if(V1[1] < V2[1]) return 1 ;
 		if(V1[1] > V2[1]) return -1;
 		return 0;
 	}
@@ -65,7 +65,7 @@ function getStats(txt) {
 				uniqueWords[i][1]++;
 		}
 	}
-	uniqueWords = uniqueWords.sort(CompareFrequency || a[0].localteCompare(b[0]));
+	uniqueWords = uniqueWords.sort(CompareFrequency);
 	let temp = uniqueWords.slice(0,10);
 	let mostFrequentWords = [];
 	console.log(temp);
